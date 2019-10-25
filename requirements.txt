@@ -1,0 +1,4 @@
+jupyter==1.0.0
+matplotlib==3.*
+numpy==1.17.*
+sklearn
