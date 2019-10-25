@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.7.4
+    steps:
+      - run:
+          name: Update PATH and Define Environment Variable at Runtime
+          command: |
+		jupyter nbconvert --execute homework.ipynb
