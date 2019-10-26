@@ -13,7 +13,7 @@ jobs:
       - run:
           name: make html
           command: |
-            pip install nbconvert
+            sudo pip install nbconvert
             jupyter nbconvert --execute homework.ipynb
 
       - store_artifacts:
