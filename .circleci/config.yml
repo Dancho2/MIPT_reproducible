@@ -4,9 +4,6 @@ jobs:
     docker:
       - image: circleci/python:3.7.4
 
-    working_directory: ~/repo
-
-
     steps:
       - checkout
 
@@ -18,4 +15,8 @@ jobs:
             sudo pip install matplotlib
             sudo pip install numpy
             sudo pip install sklearn            
-            jupyter nbconvert --execute homework.ipynb   
+            jupyter nbconvert --execute homework.ipynb
+
+      - store_artifacts:
+          path: homework.html
+          destination: homework.html    
