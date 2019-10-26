@@ -14,7 +14,9 @@ jobs:
           name: make html
           command: |
             sudo pip install jupyter
-            sudo pip install nbconvert            
+            sudo pip install nbconvert
+            sudo pip install matplotlib
+            sudo pip install numpy            
             jupyter nbconvert --execute homework.ipynb
 
       - store_artifacts:
