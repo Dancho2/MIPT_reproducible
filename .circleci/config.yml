@@ -13,8 +13,8 @@ jobs:
       - run:
           name: make html
           command: |
-            sudo pip install nbconvert
-            sudo pip install jupyter_client
+            pip install jupyter
+            sudo pip install nbconvert            
             jupyter nbconvert --execute homework.ipynb
 
       - store_artifacts:
