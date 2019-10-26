@@ -13,8 +13,8 @@ jobs:
       - run:
           name: make html
           command: |
-	    jupyter nbconvert --execute homework.ipynb
+            jupyter nbconvert --execute homework.ipynb
 
       - store_artifacts:
           path: homework.html
-	  destination: homework.html    
+          destination: homework.html    
