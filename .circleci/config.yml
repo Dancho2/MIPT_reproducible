@@ -13,7 +13,7 @@ jobs:
       - run:
           name: make html
           command: |
-            pip install jupyter
+            sudo pip install jupyter
             sudo pip install nbconvert            
             jupyter nbconvert --execute homework.ipynb
 
